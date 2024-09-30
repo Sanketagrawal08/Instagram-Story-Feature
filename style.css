@@ -1,0 +1,122 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+ background-color: white;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+    height: 450px;
+    width: 350px;
+    background-color: white;
+   position: relative;   
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+#storiyan{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #444;
+    padding: 15px;
+    padding-bottom: 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+}
+#storiyan h6{
+padding-top: 5px;
+font-size: 14px;
+font-weight: 200;
+}
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background: linear-gradient(to bottom,rgb(227, 74, 102),rgb(253, 168, 88),rgb(85, 99, 196),rgb(216, 71, 131));
+    padding: 3px;
+    margin-right: 10px;
+}
+
+
+.story img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.storydiv{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-position: top;
+    background-size: cover;
+    transition: all ease 0.2s;
+}
+#progress{
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#growth{
+  width: 0%;
+  height: 6px;
+  background-color: rgb(77, 77, 77);
+  border-radius: 10px;
+}
+.username{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    color: #fff;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile .dp{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 30px;
+    background-size: cover;
+    background-position: top;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.username .close{
+    margin-right: 10px;
+}
+
+.restpart img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} 
